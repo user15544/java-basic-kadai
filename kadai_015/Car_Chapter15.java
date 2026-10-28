@@ -8,8 +8,10 @@ public class Car_Chapter15 {
 	public void changeGear( final int afterGear ) {
 		System.out.println("ギア" + gear + "から" + afterGear + "に切り替えました");
 		
-		if(afterGear >= 1 && afterGear <= 5) {
-			speed = afterGear * 10;
+		gear = afterGear;
+		
+		if(gear >= 1 && gear <= 5) {
+			speed = gear * 10;
 		} else {
 			speed =10;
 		}
